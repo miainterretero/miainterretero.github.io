@@ -1,0 +1,4 @@
+This is a Brave Creators publisher verification file.
+
+Domain: meksikointernacia.github.io
+Token: a96478f707ecbd3005d6056fc23c520513401a33f2af479fab6fe3b2a86a571b
