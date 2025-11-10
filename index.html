@@ -1,84 +1,212 @@
 <!DOCTYPE html>
-<style>
-    p,a{
-        font-size: 150%;
-    }
-
-</style>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Mia Interretero</title>
-        <link rel="icon" href="src/logo_solecito.png">
-    </head>
-    <body>
-        <header>
-            <h1>Mia Interretero</h1>
-            <hr>
-            <a href="index.html">
-                <img src="src/logo_solecito.png" alt="Mi logo jajaja" width="10%">
-            </a>        
-            <hr>
-        </header>
-        <main>
-            <p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mia Interretero</title>
+    <link rel="icon" href="src/logo_solecito.png">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header, main, footer {
+            width: 100%;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            margin: 20px 0;
+            font-size: 2.5rem;
+        }
+
+        .logo {
+            max-width: 150px;
+            height: auto;
+            margin: 20px auto;
+        }
+
+        p, a {
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+        }
+
+        hr {
+            margin: 20px 0;
+            border: 0;
+            border-top: 1px solid #ccc;
+        }
+
+        .entries {
+            width: 100%;
+            margin: 30px 0;
+        }
+
+        .entry-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .entry-table th, .entry-table td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .entry-link {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .entry-image {
+            max-width: 80px;
+            height: auto;
+            margin-right: 15px;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .social-icon {
+            max-width: 40px;
+            height: auto;
+        }
+
+        /* Media queries para responsividad */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            p, a {
+                font-size: 1.1rem;
+            }
+            
+            .logo {
+                max-width: 120px;
+            }
+            
+            .entry-table th:nth-child(3),
+            .entry-table td:nth-child(3) {
+                display: none;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 10px;
+            }
+            
+            h1 {
+                font-size: 1.8rem;
+            }
+            
+            .entry-table th:nth-child(2),
+            .entry-table td:nth-child(2) {
+                display: none;
+            }
+            
+            .entry-link {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .entry-image {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mia Interretero</h1>
+        <hr>
+        <a href="index.html">
+            <img src="src/logo_solecito.png" alt="Mi logo jajaja" class="logo">
+        </a>        
+        <hr>
+    </header>
+    
+    <main>
+        <p>
             Bienvenidos a Mia Interretero. Este es mi blog personal. <br>
             Welcome to Mia Interretero. This is my personal blog. <br>
-            Bonvenon al Mia Interretero. Cxi tiu estas mia personala blogo.
-            </p>
-            <p>
-                Lo estoy haciendo por mera diversión. <br>
-                I'm doing it just for fun <br>
-                Mi faras gxin nur por amuzigxi.
-            </p>
-            <p>
-                Por el momento no me interesa que se vea bonito; eso lo iré aprendiendo jajaja.
-                For now i dont care if it looks ugly.
-                Mi ne gravas se gxi ne sxajnas bela.
-            </p>
-            <p>
-                Este blog es trilingüe y estará escrito en Español, Esperanto e Inglés
-                This blog will be also in English.
-                Cxi tiu blogo estos ankau skribita je Esperanto.
-            </p>
+            Bonvenon al Mia Interretero. Ĉi tiu estas mia persona blogo.
+        </p>
+        <p>
+            Lo estoy haciendo por mera diversión. <br>
+            I'm doing it just for fun <br>
+            Mi faras ĝin nur por amuziĝi.
+        </p>
+        <p>
+            Por el momento no me interesa que se vea bonito; eso lo iré aprendiendo jajaja. <br>
+            For now I don't care if it looks ugly. <br>
+            Mi ne gravas se ĝi ne ŝajnas bela.
+        </p>
+        <p>
+            Este blog es trilingüe y estará escrito en Español, Esperanto e Inglés <br>
+            This blog will be also in English. <br>
+            Ĉi tiu blogo estos ankaŭ skribita en Esperanto.
+        </p>
 
-
-
-
-            <hr>
+        <hr>
+        
+        <section class="entries">
             <h2>Entradas</h2>
             <p>Aquí empiezan mis entradas. Espero las disfruten:</p>
 
-            <!-- Nombre Fecha Imagen-->
-
-            <table>
-                <tr>
-                    <td>Título|</td>
-                    <td>Fecha de Publicación|</a></td>
-                    <td>Imagen</td>
-                </tr>
-                <tr>
-                    <td><a href="presentacion.html">Sobre mí | </a></td>
-                    <td><a href="presentacion.html">19 de octubre de 2025 | </a></td>
-                    <td><a href="presentacion.html"><img src="src/presentacion.jpg" width="10%" alt=""></a></td>
-                </tr>
-                <tr>
-                    <td><a href="primer poema.html">Primer Poema - Del Delito De Ficción| </a></td>
-                    <td><a href="primer poema.html">19 de octubre de 2025 | </a></td>
-                    <td><a href="primer poema.html"><img src="src/en_prision.jpeg" width="10%" alt=""></a></td>
-                </tr>
-            </table> 
-        </main>
-        
-        <footer>
-            <h2>Mis Redes Sociales:</h2>
-            <table>
-                <tr>
-                    <td><a href="https://www.tiktok.com/@miainterretero?is_from_webapp=1&sender_device=pc"> <img src="src/tiktokicon.png" alt="icono de TikTok" width="5%"> </a> </td>
-                </tr>
+            <table class="entry-table">
+                <thead>
+                    <tr>
+                        <th>Título</th>
+                        <th>Fecha de Publicación</th>
+                        <th>Imagen</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="presentacion.html" class="entry-link">Sobre mí</a></td>
+                        <td><a href="presentacion.html" class="entry-link">19 de octubre de 2025</a></td>
+                        <td><a href="presentacion.html" class="entry-link"><img src="src/presentacion.jpg" class="entry-image" alt=""></a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="primer poema.html" class="entry-link">Primer Poema - Del Delito De Ficción</a></td>
+                        <td><a href="primer poema.html" class="entry-link">19 de octubre de 2025</a></td>
+                        <td><a href="primer poema.html" class="entry-link"><img src="src/en_prision.jpeg" class="entry-image" alt=""></a></td>
+                    </tr>
+                </tbody>
             </table>
-        </footer>   
-
-    </body>
+        </section>
+    </main>
+    
+    <footer>
+        <hr>
+        <h2>Mis Redes Sociales:</h2>
+        <div class="social-links">
+            <a href="https://www.tiktok.com/@miainterretero?is_from_webapp=1&sender_device=pc">
+                <img src="src/tiktokicon.png" alt="icono de TikTok" class="social-icon">
+            </a>
+        </div>
+    </footer>
+</body>
 </html>

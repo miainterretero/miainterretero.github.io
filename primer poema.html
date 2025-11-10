@@ -1,108 +1,258 @@
 <!DOCTYPE html>
-<style>
-    p{
-        font-size: 150%;
-    }
-
-
-</style>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Primer Poema | Del Delito De Ficción | Mia Interretero</title>
     <link rel="icon" href="src/logo_solecito.png">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header, main, footer {
+            width: 100%;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            margin: 20px 0;
+            font-size: 2.5rem;
+        }
+
+        h2 {
+            margin: 25px 0 15px 0;
+            font-size: 2rem;
+            text-align: center;
+        }
+
+        .logo {
+            max-width: 150px;
+            height: auto;
+            margin: 20px auto;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .poem {
+            text-align: center;
+            font-style: italic;
+            margin: 30px 0;
+            line-height: 1.8;
+        }
+
+        .poem strong {
+            display: block;
+            margin-bottom: 20px;
+            font-size: 1.4rem;
+        }
+
+        hr {
+            margin: 20px 0;
+            border: 0;
+            border-top: 1px solid #ccc;
+        }
+
+        .language-section {
+            margin-bottom: 30px;
+        }
+
+        .language-label {
+            font-weight: bold;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        .no-translation {
+            font-weight: bold;
+            text-align: center;
+            margin: 25px 0;
+        }
+
+        /* Media queries para responsividad */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.8rem;
+            }
+            
+            p {
+                font-size: 1.1rem;
+            }
+            
+            .logo {
+                max-width: 120px;
+            }
+            
+            .poem {
+                font-size: 1.1rem;
+                line-height: 1.6;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 10px;
+            }
+            
+            h1 {
+                font-size: 1.8rem;
+            }
+            
+            h2 {
+                font-size: 1.6rem;
+            }
+            
+            p {
+                text-align: left;
+            }
+            
+            .poem {
+                font-size: 1rem;
+                text-align: left;
+                padding: 0 10px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>Primer Poema | Del Delito De Ficción | Mia Interretero</h1>
-    <hr>
-    <a href="index.html">
-        <img src="src/logo_solecito.png" alt="Mi logo jajaja" width="10%">
-    </a>
-    <hr>
-    <p>
-        ES: Pues bueno, yo quiero compartir los poemas que voy escribiendo. Solo por gusto y un poco esperando la crítica que cualquier persona, por la simple 
-        y natural capacidad de apreciar la belleza, puede hacer.
-
-    </p>
-    <hr>
-    <p>
-        ES:Si quieres criticar mi poema, con toda razón lo puedes hacer. No te detengas. Si quieres solamente tirarle popó, bienvenido seas. Toda crítica será bien recibida.
-
-    </p>
-    <hr>
-    <p>
-        <strong>
-        ES: Los poemas no los voy a traducir. <br>
-        EN: I wont translate poems. <br>
-        EO:Mi ne tradukos la poemojn. <br>
-        </strong>
-    </p>
-    <hr>       <h2>He aquí el poema</h2>
-    <p>
- 
-        <strong>
-            Del Delito De Ficción
-        </strong>
-        <br>
-        Te constituyo mi reo, <br>
-        mas rehuyes de mi acción, <br>
-        que te busca a la prisión <br>
-        llevar cuando no te creo <br>
-        por conductas que no veo. <br>
-        Pues de conducta tu falta, <br>
-        por la que yo te imputo alta <br>
-        traición a mi corazón, <br>
-        no le hayo alguna razón <br>
-        aún si a diario me asalta. <br>
-<br>
-        Y porque te hago imputado <br>
-        y te asiste la inocencia, <br>
-        corre a mi cargo la ciencia <br>
-        de probarte tan culpado <br>
-        como yo de traicionado. <br>
-        Y falta prueba de mérito <br>
-        que acredite falta un rédito. <br>
-        Y medallas no amerito, <br>
-        pues tu ficción no acredito, <br>
-        ni a tu realidad doy crédito. <br>  
-    </p>
-    <hr>
-    <p>
-        ES: No sé si sea un poema complejo, tal vez sí, y he aquí la completa y más detallada explicación. <br>
-        Es un poema en formato de décimas, en el cual, cada estofra está compuesta por diez versos octosílabos, que riman en consonante en el siguiente orden abbaaccddc <br>
-    </p> 
-
-    <hr>
-    <p>
-        ES: Lo primero que hay que entender es un sentimiento de que la persona que está frente a nosotros nos está mintiendo, de cualquier modo.
-        Así, en esta ficción de juicio, lo estamos investigando por ese "delito". En el "universo" de este poema, mentir es un delito que es perseguido
-        e investigado por las autoridades; asimismo, el autor del poema es parte de quienes investigan este delito, por así decirlo, es un agente del Ministerio
-        Público.
+    <header>
+        <h1>Primer Poema | Del Delito De Ficción | Mia Interretero</h1>
+        <hr>
+        <a href="index.html">
+            <img src="src/logo_solecito.png" alt="Mi logo jajaja" class="logo">
+        </a>
+        <hr>
+    </header>
     
-    </p>
-    <hr>
-    <p>
-        ES: Luego, estamos en la idea de que el proceso que se lleva encontra del investiago es uno acusatorio oral penal, como el que tenemos en México. De este proceso tomo algunas ideas 
-        y conceptos como es "imputar", "reo", "inocencia", la carga de prueba, etc. De algún modo, en este poema, se está en la etapa inicial de un procesa penal: como si ya se hubiera formulado 
-        imputación y se estuviera en la investigación complementaria. Incluso tomo algunos conceptos jurídicos generales como la palabra "acción", "rédito",
-    
-    </p>
-    <hr>
-    <p>
-        ES: En este poema quiero expresar una suerte de enojo, porque internamente yo sé que la persona a quien va dirigido este poema me está mintiendo,
-        y, como si fuera un proceso penal, ando unvestigando sus acciones y todas sus conductas en general. Estas, sirven de prueba para acreditar 
-        el delito que le imputo (el delito de mentirme), pero, por alguna razón, tal vez incompetencia mía, falta de pericia, o tal vez insensatez, no 
-        logro terminar de probar que sea cierto lo que le imputo.
-    </p>
-    <hr>
-    <p>
-        ES: De algún modo, también me quejo de que la carga de la prueba me corresponda. Porque, como desde siempre se ha dicho: quiene afirma corresponde
-        probar. Y es odioso, porque se está en un dilema. Una parte de los sentimientos quieren destrozar a la otra persona por cometer un delito tan terrible 
-        contra mí, pero la otra mitad de los sentimientos reconocen con sabia razón que a favor del imputado siempre existe la presunción de inocencia. Entonces 
-        se está en un dilema: porque no puedo tratarlo mal o como culpable, pero algunos hechos nos hacen creer lo contrario. La imposibilidad de decidir qué hacer.
-    </p>
-
-    
+    <main>
+        <div class="language-section">
+            <span class="language-label">ES:</span>
+            <p>
+                Pues bueno, yo quiero compartir los poemas que voy escribiendo. Solo por gusto y un poco esperando la crítica que cualquier persona, por la simple 
+                y natural capacidad de apreciar la belleza, puede hacer.
+            </p>
+        </div>
+        <hr>
+        
+        <div class="language-section">
+            <span class="language-label">ES:</span>
+            <p>
+                Si quieres criticar mi poema, con toda razón lo puedes hacer. No te detengas. Si quieres solamente tirarle popó, bienvenido seas. Toda crítica será bien recibida.
+            </p>
+        </div>
+        <hr>
+        
+        <div class="no-translation">
+            <p>
+                <strong>
+                ES: Los poemas no los voy a traducir. <br>
+                EN: I wont translate poems. <br>
+                EO: Mi ne tradukos la poemojn.
+                </strong>
+            </p>
+        </div>
+        <hr>
+        
+        <h2>He aquí el poema</h2>
+        
+        <div class="poem">
+            <strong>Del Delito De Ficción</strong>
+            Te constituyo mi reo,<br>
+            mas rehuyes de mi acción,<br>
+            que te busca a la prisión<br>
+            llevar cuando no te creo<br>
+            por conductas que no veo.<br>
+            Pues de conducta tu falta,<br>
+            por la que yo te imputo alta<br>
+            traición a mi corazón,<br>
+            no le hayo alguna razón<br>
+            aún si a diario me asalta.<br>
+            <br>
+            Y porque te hago imputado<br>
+            y te asiste la inocencia,<br>
+            corre a mi cargo la ciencia<br>
+            de probarte tan culpado<br>
+            como yo de traicionado.<br>
+            Y falta prueba de mérito<br>
+            que acredite falta un rédito.<br>
+            Y medallas no amerito,<br>
+            pues tu ficción no acredito,<br>
+            ni a tu realidad doy crédito.
+        </div>
+        <hr>
+        
+        <div class="language-section">
+            <span class="language-label">ES:</span>
+            <p>
+                No sé si sea un poema complejo, tal vez sí, y he aquí la completa y más detallada explicación.<br>
+                Es un poema en formato de décimas, en el cual, cada estofra está compuesta por diez versos octosílabos, que riman en consonante en el siguiente orden abbaaccddc.
+            </p>
+        </div>
+        <hr>
+        
+        <div class="language-section">
+            <span class="language-label">ES:</span>
+            <p>
+                Lo primero que hay que entender es un sentimiento de que la persona que está frente a nosotros nos está mintiendo, de cualquier modo.
+                Así, en esta ficción de juicio, lo estamos investigando por ese "delito". En el "universo" de este poema, mentir es un delito que es perseguido
+                e investigado por las autoridades; asimismo, el autor del poema es parte de quienes investigan este delito, por así decirlo, es un agente del Ministerio
+                Público.
+            </p>
+        </div>
+        <hr>
+        
+        <div class="language-section">
+            <span class="language-label">ES:</span>
+            <p>
+                Luego, estamos en la idea de que el proceso que se lleva encontra del investiago es uno acusatorio oral penal, como el que tenemos en México. De este proceso tomo algunas ideas 
+                y conceptos como es "imputar", "reo", "inocencia", la carga de prueba, etc. De algún modo, en este poema, se está en la etapa inicial de un procesa penal: como si ya se hubiera formulado 
+                imputación y se estuviera en la investigación complementaria. Incluso tomo algunos conceptos jurídicos generales como la palabra "acción", "rédito".
+            </p>
+        </div>
+        <hr>
+        
+        <div class="language-section">
+            <span class="language-label">ES:</span>
+            <p>
+                En este poema quiero expresar una suerte de enojo, porque internamente yo sé que la persona a quien va dirigido este poema me está mintiendo,
+                y, como si fuera un proceso penal, ando unvestigando sus acciones y todas sus conductas en general. Estas, sirven de prueba para acreditar 
+                el delito que le imputo (el delito de mentirme), pero, por alguna razón, tal vez incompetencia mía, falta de pericia, o tal vez insensatez, no 
+                logro terminar de probar que sea cierto lo que le imputo.
+            </p>
+        </div>
+        <hr>
+        
+        <div class="language-section">
+            <span class="language-label">ES:</span>
+            <p>
+                De algún modo, también me quejo de que la carga de la prueba me corresponda. Porque, como desde siempre se ha dicho: quiene afirma corresponde
+                probar. Y es odioso, porque se está en un dilema. Una parte de los sentimientos quieren destrozar a la otra persona por cometer un delito tan terrible 
+                contra mí, pero la otra mitad de los sentimientos reconocen con sabia razón que a favor del imputado siempre existe la presunción de inocencia. Entonces 
+                se está en un dilema: porque no puedo tratarlo mal o como culpable, pero algunos hechos nos hacen creer lo contrario. La imposibilidad de decidir qué hacer.
+            </p>
+        </div>
+    </main>
 </body>
 </html>
